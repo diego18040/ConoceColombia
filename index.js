@@ -12,7 +12,7 @@ export const loadNavbar = () => {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup"">
                   <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <a class="nav-link active"  href="./Home.html">Home</a>
+                    <a class="nav-link active"  href="./index.html">Home</a>
                     <a class= "nav-link" href="./Especies invasoras.html">Especies Invasoras</a>
                   </div>
                 </div>
