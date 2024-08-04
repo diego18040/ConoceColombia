@@ -4,7 +4,7 @@ export const loadNavbar = () => {
     navbarContainer.innerHTML=`
     <nav class="navbar navbar-expand-lg  bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand col-4 col-sm-2 col-md-1" href="./Home.html">
+                <a class="navbar-brand col-4 col-sm-2 col-md-1" href="./index.html">
                   <img src="./Logo  y Portada/Logo.png" alt="Bootstrap" width="200" height="100">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@ export const loadNavbar = () => {
   // Función para crear una tarjeta para cada departamento
   export function createCard(department) {
       return `
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 mb-4 p-2">
               <div class="card mb-4">
                   <img src="images/departments/${department.id}.jpg" class="card-img-top" alt="${department.name}">
                   <div class="card-body">
@@ -50,6 +50,11 @@ export async function fetchDepartments(apiURL) {
         return [];
     }
 }
+// Funcion para obtener las ciudades de los deprtamentos seleccionados
+
+
+
+
 // Creo una funcion para footer con el mismo objetivo que navbar
 export function loadFooter(){
     const Footer = `
